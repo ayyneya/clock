@@ -52,7 +52,7 @@
     
     var today = new Date();
     var hrs = today.getHours();
-    var time = `${today.getHours()}:${today.getMinutes()}`;
+    var time = `${today.getHours()}:${String(date.getMinutes()).padStart(2, "0")}`;
     var dayOfWeek = weekday[today.getDay()];
     var date = `${dayOfWeek}, ${monthNames[today.getMonth()]} ${today.getDate()}`;
 

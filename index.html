@@ -53,7 +53,6 @@
     var today = new Date();
     var hrs = today.getHours();
     var time = `${String(today.getHours()).padStart(2, "0")}:${String(today.getMinutes()).padStart(2, "0")}`;
-    var time2 = today.getHours();
     var dayOfWeek = weekday[today.getDay()];
     var date = `${dayOfWeek}, ${monthNames[today.getMonth()]} ${today.getDate()}`;
 
@@ -65,12 +64,12 @@
         greet = 'Good afternoon, neya. ';
     else if (hrs >= 17 && hrs <= 23)
         greet = 'Good evening, neya.  ';
-    else if (hrs >= 23 && hrs <= 5)
+    else if (hrs >= 23 && hrs <= 24+5)
         greet = 'Up late again? bruh.  ';
     
     document.getElementById('lbl').innerHTML = `
         <div class="container">
-          <div id="time2">${time}</div>
+          <div id="time">${time}</div>
           <div id="date"> ${date}</div>
           <div class="greeting">${greet}</div>
         <div/>

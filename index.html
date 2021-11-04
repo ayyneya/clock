@@ -53,7 +53,7 @@
     var today = new Date();
     var hrs = today.getHours();
     var time = `${String(today.getHours()).padStart(2, "0")}:${String(today.getMinutes()).padStart(2, "0")}`;
-    var time2 = `${today.getHours()}`;
+    var time2 = today.getHours();
     var dayOfWeek = weekday[today.getDay()];
     var date = `${dayOfWeek}, ${monthNames[today.getMonth()]} ${today.getDate()}`;
 

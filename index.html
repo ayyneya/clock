@@ -64,7 +64,7 @@
         greet = 'Good afternoon, neya. ';
     else if (hrs >= 17 && hrs <= 23)
         greet = 'Good evening, neya.  ';
-    else if (hrs >= 23 && hrs <= 00+05)
+    else if (hrs < 05)
         greet = 'Up late again? bruh.  ';
     
     document.getElementById('lbl').innerHTML = `
